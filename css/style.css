@@ -1,0 +1,74 @@
+.button{
+ 
+background: #00363f;
+border-radius: 8px;
+border: none;
+font-size: 28px;
+text-align: center;
+color: aliceblue;
+cursor:pointer;
+margin: 5px;
+display: inline-block;
+width: 250px;
+height: 100px;
+padding: 20px;
+transition: all 0.5s;
+}
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+li {
+    position:static;
+    display: inline-block;
+}
+body{
+    background-image: url("../images/fondo2.jpg");
+    background-size: 100%; 
+}
+
+.contenedor{
+
+  width: auto;
+  box-sizing: border-box;
+  height: auto; 
+  margin-top: 80px;
+  padding: 10px;
+  background-color: rgba(255,255,255,.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  color: #3F51B5;
+}
+
+
+.fondoDePantalla{
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  background-image: url("images/fondo2.jpg");
+  }
